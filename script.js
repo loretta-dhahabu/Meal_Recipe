@@ -20,3 +20,13 @@ const fetchAllMeals = async (url) => {
       console.error(error.message);
     }
   };
+
+  //function to fetch Meals by name
+const fetchMealByName = async (name) => {
+    let meals = await fetchAllMeals(baseUrl).then((response) => response);
+    let result = meals.meals.filter(
+      (meal) => meal.strMeal.toLowerCase() === name.toLowerCase()
+    );
+    displayMeal(result);
+  };
+  
