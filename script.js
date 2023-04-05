@@ -9,3 +9,14 @@ const searchMealButton = document.querySelector("#search-meal");
 const input = document.querySelector("#input");
 const searchMealForm = document.querySelector("#search-meal-form");
 const searchCriteria = document.querySelectorAll(".criterion");
+
+//function to be called back to fetch our meals data from the API
+const fetchAllMeals = async (url) => {
+    try {
+      let response = await fetch(url);
+      let data = await response.json();
+      return data;
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
