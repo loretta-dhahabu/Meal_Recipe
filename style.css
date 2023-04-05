@@ -8,3 +8,84 @@
     display: flex;
     justify-content: space-between;
   }
+
+  #nav-items > ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right:10px;
+  }
+  #nav-items > ul > li{
+    margin-right: 30px;
+  
+  }
+  #logo{
+    font-size: x-large;
+    font-weight: 700;
+    color: orange;
+    margin-left: 20px;
+  }
+  #btn{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+  }
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .text{
+    margin-left: 300px;
+    margin-top: 70px;
+  }
+  .image{
+    margin-right: 150px;
+  }
+  .heros{
+    margin-left: 20px;
+    margin-right: 30px;
+    text-align: center;
+  }
+  .heros > h2 {
+    color: green;
+  }
+  .heros > p {
+    border: solid green;
+    background-color: green;
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  .heros > form {
+    margin-top: 40px;
+  }
+  .heross{
+    border: solid orange;
+    background-color: orange;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+    margin-bottom: 150px;
+  }
+  .heross-images{
+    display: flex;
+    justify-content:space-between ;
+    margin: 50px;
+  }
+  .heading{
+    text-align: center;
+  }
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    border: solid black;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
