@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Meal Recipe</title>
 </head>
 <body>
@@ -34,19 +36,43 @@
             <img src="./assets/images/chicken.webp" width="600" height="400">
         </div>
     </div>
-     <!--Hero Section 1-->
-     <div class="hero">
-        <div class="text">
-            <h3>Cuisine</h3>
-            <h2>Learn how to make <br>
-            your choice food <br>
-            delicasies with Reci</h2>
-            <h5>All you need in one place</h5>
-        </div>
-        <div class="image" id="image1">
-            <img src="./assets/images/chicken.webp" width="600" height="400">
-        </div>
+     
+    <!--Hero Section 2-->
+    <div class="heros">
+        <h2>Reci</h2>
+        <h1>We got you covered</h1>
+        <p>Find recipes based on special diets, nutritional requirements, or favorite ingredients,<br> 
+            our recipes can be classified into types and cuisines and let you<br>
+            convert ingredient amounts, or even compute an entire meal plan</p>
+
+            <form action="" id="search-meal-form">
+       
+                <select name="search-meal" id="search-meal" autocomplete="on">
+                    <option value="" disabled selected>Choose Search Criteria</option>            
+                    <option value="name" class="criterion">By Name</option>
+                    <option value="place" class="criterion">By Place</option>
+                    <option value="ingredient" class="criterion">By Ingredient</option>
+                </select>
+                <input type="text" id="input" value="" placeholder="Search...">
+                <button id="search-meal">Submit</button>
+            </form>
+            <ul id="meal-list">
+        
+            </ul>
+        
+            <h1 id="meal-name"></h1>
+            <img id="meal-image" src="" alt=""/>
+        
+           
+            <ul id="ingredients">
+        
+            </ul>
+        
+            <p id="recipe">
+        
+            </p>
     </div>
+
 
      <!--Hero Section 3-->
      <div class="heross">
