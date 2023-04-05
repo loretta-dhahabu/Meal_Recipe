@@ -30,3 +30,44 @@ const fetchMealByName = async (name) => {
     displayMeal(result);
   };
   
+
+//callback function to display meals following search by any criterion
+const displayMeal = (meals) => {
+    mealList.innerHTML = "";
+    if (meals.length > 0) {
+      console.log(meals[0]);
+  
+      meals.forEach((meal, i) => {
+        mealName.textContent = meal.strMeal;
+        mealImage.src = meal.strMealThumb;
+        mealRecipe.textContent = meal.strInstructions;
+      });
+  
+      meals.forEach((meal) => {
+        let li = document.createElement("li");
+        li.textContent = meal.strMeal;
+        mealList.appendChild(li);
+      });
+    }
+  };
+
+  //function to allow meals to display basing on the criterion that the user has chosen to use in finding their recipe.
+const getUserInput = (form) => {
+    form.preventDefault();
+    userInput = input.value;
+    let criterion = Array(...searchCriteria).filter(
+      (criteria) => criteria.selected
+    );
+    if (criterion[0].value === "name") {
+      if (userInput.trim()) {
+        fetchMealByName(userInput);
+      }
+    } else if (criterion[0].value === "place") {
+      fetchMealByPlace(userInput);
+    } else if (criterion[0].value === "ingredients") {
+      fetchMealByMainIngredient(userInput);
+    }
+    searchMealForm.reset();
+  };
+  
+  searchMealForm.addEventListener("submit", getUserInput);
