@@ -1,14 +1,52 @@
-*{
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+html {
+	scroll-behavior: smooth;
+}
 
-  header{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
     display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
+    padding: 20px 60px;
+    overflow: hidden;
+    /* box-shadow: 0 0.5rem 1rem #c89389; */
+    background-color: #FEE8E3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;    
+}
 
+header a {
+    text-decoration: none;
+    color: rgb(67, 57, 57);
+}
+
+.menu-bars {
+    display: none;
+}
+
+header .logo a{
+    font-size: xx-large;
+    color: #EF583B;
+    font-weight: semi-bold;
+    font-family: 'Roboto', sans-serif;
+}
+.menu-items a {
+    padding-left: 20px;
+    font-size: larger;
+}
+
+.menu-items a:hover{
+    color: #EF583B;
+}
+/* 
   #nav-items > ul{
     display: flex;
     justify-content: space-between;
@@ -23,7 +61,7 @@
     font-weight: 700;
     color: orange;
     margin-left: 20px;
-  }
+  } */
   #btn{
     background-color: green;
     border-radius: 5px;
@@ -32,28 +70,45 @@
   .hero{
     display: flex;
     justify-content: space-between;
-    background-color: orange;
+    align-items: center;
+    position: relative;
+    top: 80;
+    padding: 80px;
+    /* background-color: orange; */
     margin-left: 20px;
     margin-right: 30px;
   }
-  .text{
-    margin-left: 300px;
-    margin-top: 70px;
+  .home-text {
+    background-color: #FEE8E3;
+    width: 60%;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -400px;
+    border-radius: 5px;
+    padding-top: 1em;
+}
+  .home-image{
+    align-items: center;
+    width: 50%;
+    padding-top: 1em;
+    /* margin-right: 150px; */
   }
-  .image{
-    margin-right: 150px;
-  }
+  .home-image img{
+    width: 100%;
+}
   .heros{
     margin-left: 20px;
     margin-right: 30px;
     text-align: center;
   }
   .heros > h2 {
-    color: green;
+    color: orange;
   }
   .heros > p {
-    border: solid green;
-    background-color: green;
+    border: solid #FEE8E3;
+    background-color: orange;
     border-radius: 20px;
     padding: 50px;
     margin-left: 500px;
@@ -61,10 +116,12 @@
   }
   .heros > form {
     margin-top: 40px;
+    padding: auto;
   }
   .heross{
     border: solid orange;
-    background-color: orange;
+    background-color: #FEE8E3;
+    /* background-color: orange; */
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 100px;
@@ -81,11 +138,12 @@
   }
   .footer-content{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     border: solid black;
     background-color: black;
     color: white;
-    padding: 50px;
+    padding: 40px;
     margin-left: 20px;
     margin-right: 30px;
   }
+  
